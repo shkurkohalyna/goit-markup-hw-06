@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      <button data-modal-open>Заказать услугу</button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p>Оставьте свои данные, мы вам перезвоним</p>
+        <div>
+          <svg>
+            <use href="./images/sprite-modal.svg#icon-Vector-1">
+          </svg>
+          <p></p>
+        </div>
+        <div>
+            <svg>
+            <use href="./images/sprite-modal.svg#icon-Vector-2">
+          </svg>
+          <p></p>
+        </div>
+        <div>
+            <svg>
+            <use href="./images/sprite-modal.svg#icon-Vector-3">
+          </svg>
+          <p></p>
+        </div>
+        <div>
+          <p>Комментарий</p>
+        </div>
+        <div>
+          <p>Соглашаюсь с рассылкой и принимаю Условия договора</p>
+        </div>
+        <button></button>
+        <button data-close-modal>Закрыть</button>
+      </div>
+    </div>
+    <form>
+        <label for="name">Имя</label>
+        <input type="text" name="name-user" id="name">
+        <label for="tel">Телефон</label>
+        <input type="text" name="tel" id="tel">
+        <label for="mail">Почта</label>
+        <input type="email" name="mail" id="mail">
+        <button type="submit">Отправить</button>
+    </form>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
