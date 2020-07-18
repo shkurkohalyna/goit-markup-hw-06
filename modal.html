@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
       <button data-modal-open>Заказать услугу</button>
@@ -29,7 +32,7 @@
           <p></p>
         </div>
         <div>
-          <p>Комментарий</p>
+          <p></p>
         </div>
         <div>
           <p>Соглашаюсь с рассылкой и принимаю Условия договора</p>
@@ -38,13 +41,40 @@
         <button data-close-modal>Закрыть</button>
       </div>
     </div>
-    <form>
-        <label for="name">Имя</label>
-        <input type="text" name="name-user" id="name">
-        <label for="tel">Телефон</label>
-        <input type="text" name="tel" id="tel">
-        <label for="mail">Почта</label>
-        <input type="email" name="mail" id="mail">
+    <form class="form">
+      <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+        <div class="form-field">
+          <input type="text" class="form-input" name="name-user" id="name" placeholder=" ">
+          <label for="name" class="form-label">Имя</label>
+          <svg class="icon-form" width="12px"  height="12px">
+                  <use href="./images/sprite-modal.svg#icon-Vector-1">
+                </svg>
+        </div>
+      
+        <div class="form-field">
+          <input type="text" class="form-input" name="tel" id="tel" placeholder=" ">
+          <label for="tel" class="form-label">Телефон</label>
+         <svg class="icon-form" width="12px"  height="12px">
+                  <use href="./images/sprite-modal.svg#icon-Vector-2">
+                </svg>
+        </div>
+        <div class="form-field">
+          <input type="email" class="form-input" name="mail" id="mail" placeholder=" ">
+          <label for="mail" class="form-label">Почта</label>
+          <svg class="icon-form" width="12px"  height="12px">
+                  <use href="./images/sprite-modal.svg#icon-Vector-3">
+                </svg>
+        </div>
+
+        <div>
+          <label for="comment" class="comment-form"> </label>
+          <textarea name="comment" class="text-area-modal" id="comment" cols="30" rows="10" placeholder="Комментарий"></textarea>
+        </div>
+        <div> 
+          <input type="checkbox" name="policy" id="policy">
+          <label for="policy" class="checkbox-form">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span> </label>
+        </div>
         <button type="submit">Отправить</button>
     </form>
     <script src="./js/modal.js"></script>
