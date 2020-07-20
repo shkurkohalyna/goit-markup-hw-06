@@ -47,23 +47,23 @@
         <div class="form-field">
           <input type="text" class="form-input" name="name-user" id="name" placeholder=" ">
           <label for="name" class="form-label">Имя</label>
-          <svg class="icon-form" width="12px"  height="12px">
-                  <use href="./images/sprite-modal.svg#icon-Vector-1">
+          <svg class="icon-form" width="14px"  height="14px">
+                  <use href="./images/sprite.svg#icon-name1">
                 </svg>
         </div>
       
         <div class="form-field">
           <input type="text" class="form-input" name="tel" id="tel" placeholder=" ">
           <label for="tel" class="form-label">Телефон</label>
-         <svg class="icon-form" width="12px"  height="12px">
-                  <use href="./images/sprite-modal.svg#icon-Vector-2">
+         <svg class="icon-form" width="13px"  height="13px">
+                  <use href="./images/sprite.svg#icon-tel1">
                 </svg>
         </div>
         <div class="form-field">
           <input type="email" class="form-input" name="mail" id="mail" placeholder=" ">
           <label for="mail" class="form-label">Почта</label>
-          <svg class="icon-form" width="12px"  height="12px">
-                  <use href="./images/sprite-modal.svg#icon-Vector-3">
+          <svg class="icon-form" width="15px"  height="12px">
+                  <use href="./images/sprite.svg#icon-post1">
                 </svg>
         </div>
 
@@ -71,11 +71,13 @@
           <label for="comment" class="comment-form"> </label>
           <textarea name="comment" class="text-area-modal" id="comment" cols="30" rows="10" placeholder="Комментарий"></textarea>
         </div>
-        <div> 
-          <input type="checkbox" name="policy" id="policy">
-          <label for="policy" class="checkbox-form">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span> </label>
+        <div class="checkbox1"> 
+          
+          <label class="checkbox-label"><input class="checkbox-input" type="checkbox"  name="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> 
+          <span class="icon-checkbox"></span>
+          </label>
         </div>
-        <button type="submit">Отправить</button>
+        <button type="submit" class="button-primary">Отправить</button>
     </form>
     <script src="./js/modal.js"></script>
   </body>
