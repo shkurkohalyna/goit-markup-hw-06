@@ -53,16 +53,65 @@
       </div>
     </header>
     <main>
-      <!--hero-->
+<!--hero-->
       <section class="hero">
         <h1 class="hero-title">
           еффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button type="button" class="button-primary">Заказать услугу</button>
+        <button type="button" class="button-primary" data-modal-open>Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
+          
+<!-- Modalka -->
+          <div class="modal">
+            <form class="form">
+              <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <div class="form-field">
+                  <input type="text" class="form-input" name="name-user" id="name" placeholder=" ">
+                  <label for="name" class="form-label">Имя</label>
+                  <svg class="icon-form" width="14px"  height="14px">
+                    <use href="./images/sprite.svg#icon-name1">
+                  </svg>
+                </div>
+      
+                <div class="form-field">
+                  <input type="text" class="form-input" name="tel" id="tel" placeholder=" ">
+                  <label for="tel" class="form-label">Телефон</label>
+                  <svg class="icon-form" width="13px"  height="13px">
+                    <use href="./images/sprite.svg#icon-tel1">
+                  </svg>
+                </div>
+
+                <div class="form-field">
+                  <input type="email" class="form-input" name="mail" id="mail" placeholder=" ">
+                  <label for="mail" class="form-label">Почта</label>
+                  <svg class="icon-form" width="15px"  height="12px">
+                    <use href="./images/sprite.svg#icon-post1">
+                  </svg>
+                </div>
+
+                <div class="form-field">
+                  <label for="comment" class="comment-form"> </label>
+                  <textarea name="comment" class="text-area-modal" id="comment" cols="30" rows="10" placeholder="Комментарий"></textarea>
+                </div>
+<!-- checkbox -->
+                <div class="form-field"> 
+                  <label class="checkbox">
+                    <input type="checkbox"
+                    class="checkbox-input" 
+                    value="subscribe"  
+                    name="policy"> 
+                    <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="" class="check-a">Условия договора</a></span>
+                  </label>
+                </div>
+              <button type="submit" class="button-primary">Отправить</button>
+            </form>
+            <button data-close-modal>Закрыть</button>
+          </div>
+        </div>
       </section>
 
-      <!-- <h2>Характеристики компании</h2> -->
+<!-- <h2>Характеристики компании</h2> -->
       <section class="section">
         <div class="container">
           <ul class="features">
@@ -111,7 +160,7 @@
           </ul>
         </div>
 
-        <!-- Чем мы занимаемся -->
+<!-- Чем мы занимаемся -->
 
         <h2 class="section-title">Чем мы занимаемся</h2>
         <div class="container">
@@ -128,7 +177,7 @@
           </ul>
         </div>
       </section>
-      <!-- наша команда -->
+<!-- наша команда -->
       <section class="section teem">
         <h2 class="section-title comand">Наша команда</h2>
         <div class="container">
@@ -276,7 +325,7 @@
           </ul>
         </div>
       </section>
-      <!--клиенты-->
+<!--клиенты-->
       <section class="section clients">
         <h2 class="section-title">Постоянные клиенты</h2>
         <div class="container">
@@ -322,7 +371,7 @@
       </section>
     </main>
     <footer class="footer">
-      <!--footer logo-->
+<!--footer -->
       <section class="section-footer">
         <div class="container">
           <div class="adress-column">
@@ -343,7 +392,7 @@
               </li>
             </ul>
           </div>
-          <!--Buttons-->
+<!--Buttons-->
           <div>
             <p class="login">присоединяйтесь</p>
             <ul class="networks-links">
@@ -375,12 +424,19 @@
           </div>
           <div>
             <b class="login">подпишитесь на рассылку</b>
-            <b class="footer-link">email</b>
+            <div class="singing">
+              <form class="footer-allform">
+              <div class="footer-form ">
+                <input type="email" class="footer-input " name="mail" id="mail" placeholder="E-mail">
+                <label for="mail" class="footer-label "> </label>
+              </div>
+            </form>
             <button class="button-secondary">
               Подписаться <svg class="icon-footer-btn">
                   <use href="./images/sprite.svg#icon-litachok">
                 </svg>
             </button>
+            </div>
           </div>
         </div>
       </section>
@@ -390,5 +446,6 @@
         </div>
       </section>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

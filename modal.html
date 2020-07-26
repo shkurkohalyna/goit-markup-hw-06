@@ -12,36 +12,7 @@
       <button data-modal-open>Заказать услугу</button>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p>Оставьте свои данные, мы вам перезвоним</p>
-        <div>
-          <svg>
-            <use href="./images/sprite-modal.svg#icon-Vector-1">
-          </svg>
-          <p></p>
-        </div>
-        <div>
-            <svg>
-            <use href="./images/sprite-modal.svg#icon-Vector-2">
-          </svg>
-          <p></p>
-        </div>
-        <div>
-            <svg>
-            <use href="./images/sprite-modal.svg#icon-Vector-3">
-          </svg>
-          <p></p>
-        </div>
-        <div>
-          <p></p>
-        </div>
-        <div>
-          <p>Соглашаюсь с рассылкой и принимаю Условия договора</p>
-        </div>
-        <button></button>
-        <button data-close-modal>Закрыть</button>
-      </div>
-    </div>
-    <form class="form">
+        <form class="form">
       <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
         <div class="form-field">
@@ -72,13 +43,16 @@
           <textarea name="comment" class="text-area-modal" id="comment" cols="30" rows="10" placeholder="Комментарий"></textarea>
         </div>
         <div class="checkbox1"> 
-          
           <label class="checkbox-label"><input class="checkbox-input" type="checkbox"  name="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> 
           <span class="icon-checkbox"></span>
           </label>
         </div>
         <button type="submit" class="button-primary">Отправить</button>
     </form>
+        <button data-close-modal>Закрыть</button>
+      </div>
+    </div>
+    
     <script src="./js/modal.js"></script>
   </body>
 </html>
