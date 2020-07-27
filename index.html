@@ -65,7 +65,10 @@
 <!-- Modalka -->
           <div class="modal">
             <form class="form">
-              <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+              <button class="close-button" data-close-modal><svg class="icon-modal-close" width="13px"  height="13px">
+                    <use href="./images/sprite.svg#icon-close">
+                  </svg></button>
+                <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
                 <div class="form-field">
                   <input type="text" class="form-input" name="name-user" id="name" placeholder=" ">
                   <label for="name" class="form-label">Имя</label>
@@ -98,7 +101,7 @@
                 <div class="form-field"> 
                   <label class="checkbox">
                     <input type="checkbox"
-                    class="checkbox-input" 
+                    class="checkbox-input visually-hidden" 
                     value="subscribe"  
                     name="policy"> 
                     <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="" class="check-a">Условия договора</a></span>
@@ -106,7 +109,7 @@
                 </div>
               <button type="submit" class="button-primary">Отправить</button>
             </form>
-            <button data-close-modal>Закрыть</button>
+            
           </div>
         </div>
       </section>
