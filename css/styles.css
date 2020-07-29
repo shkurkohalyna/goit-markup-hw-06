@@ -307,6 +307,7 @@ h4 {
 /* .animation:hover::before {
   opacity: 1;
 } */
+
 /* модалка */
 .backdrop {
   position: fixed;
@@ -322,9 +323,9 @@ h4 {
   opacity: 0;
   pointer-events: none;
 }
-.backdrop.is-hidden .modal {
+/* .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%), scale(0.9);
-}
+} */
 .modal {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
